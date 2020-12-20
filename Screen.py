@@ -16,11 +16,6 @@ class Screen:
             for x in range(0,size_x):
                 self.content[y][x] = None
 
-    def clear_content(self):
-        self.content = {}
-        for y in range(0,self.size_y):
-            for x in range(0,self.size_x):
-                self.content[y][x] = None
 
     def printScreen(self):
         print("\033c", end="") # Clearing the screen
